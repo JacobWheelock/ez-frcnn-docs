@@ -1,7 +1,7 @@
 site_name: EZ-FRCNN
 site_url: https://docs.ezfrcnn.com/
 nav:
-  - Main Site: https://ezfrcnn.com
+  - Main Site: https://www.ezfrcnn.com
   - Getting Started: index.md
   - ez-frcnn.annotation: annotation.md
   - ez-frcnn.characterize: characterize.md
