@@ -20,7 +20,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install MkDocs
-        run: pip install mkdocs mkdocs-material mkdocstrings
+        run: pip install mkdocs mkdocs-material mkdocstrings[python]
 
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force --remote-branch gh-pages
