@@ -1,5 +1,5 @@
 site_name: EZ-FRCNN
-site_url: https://ez-frcnn.github.io
+site_url: https://docs.ezfrcnn.com/
 nav:
   - Getting Started: index.md
   - ez-frcnn.annotation: annotation.md
