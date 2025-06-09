@@ -7,11 +7,15 @@ on:
       - 'mkdocs.yml'
       - 'docs/**'
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -19,14 +23,14 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install MkDocs
+      - name: Install MkDocs and plugins
         run: pip install mkdocs mkdocs-material mkdocstrings[python]
 
-      - name: Deploy to GitHub Pages
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Configure Git for GitHub Pages deployment
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}
-          mkdocs gh-deploy --force --clean --remote-branch gh-pages --remote-name origin
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force --clean --remote-branch gh-pages --remote-name origin
