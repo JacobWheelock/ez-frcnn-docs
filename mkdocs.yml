@@ -1,7 +1,17 @@
 site_name: EZ-FRCNN
-site_url: https://docs.ezfrcnn.com/
+site_url: https://docs.ezfrcnn.com
+
+theme:
+  name: material
+  palette:
+    scheme: slate  # This forces the dark theme
+  features:
+    - navigation.instant
+    - navigation.top
+    - navigation.sections
+    - navigation.expand
+
 nav:
-  - Main Site: https://ezfrcnn.com
   - Getting Started: index.md
   - ez-frcnn.annotation: annotation.md
   - ez-frcnn.characterize: characterize.md
@@ -10,8 +20,7 @@ nav:
   - ez-frcnn.plotting: plotting.md
   - ez-frcnn.training: training.md
   - ez-frcnn.utils: utils.md
-
-theme: readthedocs
+  - Main Site: https://ezfrcnn.com
 
 plugins:
   - search
