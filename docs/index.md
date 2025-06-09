@@ -1,5 +1,5 @@
 # Documentation for EZ-FRCNN: A Fast, Accessible and Robust Deep Learning Package for Object Detection Applications in Ethology and Cell Biology
-EZ-FRCNN is a user-friendly implementation of the popular Faster Region-based Convolutional Neural Network (Faster R-CNN) originally developed by [Ren et al](https://ieeexplore.ieee.org/document/7485869). This algorithm is designed *by* biologists *for* biologists, and is applicable to virtually any dataset! To get started, visit [www.ezfrcnn.com](www.ezfrcnn.com) or continue reading below.
+EZ-FRCNN is a user-friendly implementation of the popular Faster Region-based Convolutional Neural Network (Faster R-CNN) originally developed by [Ren et al](https://ieeexplore.ieee.org/document/7485869). This algorithm is designed *by* biologists *for* biologists, and is applicable to virtually any dataset! To get started, visit [www.ezfrcnn.com](https://ezfrcnn.com) or continue reading below.
 
 ## Features
 - Easy installation and environment setup for all OSes
