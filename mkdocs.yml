@@ -1,0 +1,17 @@
+site_name: EZ-FRCNN
+site_url: https://ez-frcnn.github.io
+nav:
+  - Getting Started: index.md
+  - ez-frcnn.annotation: annotation.md
+  - ez-frcnn.characterize: characterize.md
+  - ez-frcnn.image_augs: image_augs.md
+  - ez-frcnn.inferencing: inferencing.md
+  - ez-frcnn.plotting: plotting.md
+  - ez-frcnn.training: training.md
+  - ez-frcnn.utils: utils.md
+
+theme: readthedocs
+
+plugins:
+  - search
+  - mkdocstrings
